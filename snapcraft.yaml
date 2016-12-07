@@ -1,0 +1,24 @@
+name: zeppelin
+summary: Zeppelin
+description: Zeppelin
+version: "0.6.2"
+confinement: strict
+grade: stable
+apps:
+    zeppelin:
+        command: snap.sh
+        plugs: [network-bind, process-control]
+        daemon: forking
+parts:
+  zeppelin:
+    plugin: dump
+    source: http://mirror.cc.columbia.edu/pub/software/apache/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
+  jdk:
+    plugin: nil
+    stage-packages:
+      - default-jdk
+  glue:
+    plugin: dump
+    source: .
+    snap:
+      - snap.sh
