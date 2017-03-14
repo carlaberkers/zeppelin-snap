@@ -7,7 +7,7 @@ description: |
  Core feature:
   * Web based notebook style editor.
   * Built-in Apache Spark support
-version: "0.6.2"
+version: "0.7.0"
 confinement: devmode
 grade: devel
 apps:
@@ -18,7 +18,7 @@ apps:
 parts:
   zeppelin:
     plugin: dump
-    source: http://mirror.cc.columbia.edu/pub/software/apache/zeppelin/zeppelin-0.6.2/zeppelin-0.6.2-bin-all.tgz
+    source: http://www-eu.apache.org/dist/zeppelin/zeppelin-0.7.0/zeppelin-0.7.0-bin-all.tgz
   jdk:
     plugin: nil
     stage-packages:
