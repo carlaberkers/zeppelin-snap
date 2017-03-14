@@ -10,6 +10,7 @@ description: |
 version: "0.7.0"
 confinement: devmode
 grade: devel
+icon: icon.png
 apps:
     zeppelin:
         command: snap.sh
